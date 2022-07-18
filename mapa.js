@@ -44,7 +44,7 @@
                     
                     drone_mini = L.imageOverlay('img/drone2.png',[[-21.70983548137554, -46.8275536418],[-21.711427499655034, -46.8260716641]],{opacity:1,minZoom:19, maxZoom:21 });
 
-                    tumulos = L.geoJSON.ajax('data/tumulos.geojson',{style:styletumulos, onEachFeature:processtumulos, filter:filtertumulos, opacity:1.0,weight:0.3,fillOpacity:0.5, 	attribution: '&copy; <a href="https://www.cemitech.net" target="_blank">CEMItech 2022'
+                    tumulos = L.geoJSON.ajax('data/tumulos.geojson',{style:styletumulos, onEachFeature:processtumulos, filter:filtertumulos, opacity:1.0,weight:0.3,fillOpacity:0.5, 	attribution: '&copy; <a href="https://www.linkedin.com/in/engleandropereira/" target="_blank">Leandro Pereira'
                     }).addTo(mymap);
                 
                     tumulos.on('data:loaded', function(){
