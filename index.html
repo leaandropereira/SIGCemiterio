@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CEMItech 2022</title>
+        <meta name = "viewport" content= "width=devide-width, initial-scale=1">
+        <link rel="stylesheet" href="src/leaflet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="src/leaflet-src.js"></script>
+        <script src="src/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="plugins/L.Control.Pan.css">
+        <script src="plugins/L.Control.Pan.js"></script>
+        <link rel="stylesheet" href="plugins/L.Control.Zoomslider.css">
+        <script src="plugins/L.Control.Zoomslider.js"></script>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.74.0/dist/L.Control.Locate.min.css" />        
+        <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="plugins/easy-button.css">
+        <script src="plugins/easy-button.js"></script>
+        <link rel="stylesheet" href="plugins/L.Control.Sidebar.css">
+        <script src="plugins/L.Control.Sidebar.js"></script>
+        <script src="plugins/leaflet-providers.js"></script>
+        <link rel="stylesheet" href="plugins/Control.MiniMap.css">
+        <script src="plugins/Control.MiniMap.js"></script>
+        <script src="plugins/leaflet-search.js"></script>
+        <script src="plugins/leaflet.ajax.min.js"></script>
+        <link rel="stylesheet" href="plugins/full/Control.FullScreen.css"/>
+	    <script src="plugins/full/Control.FullScreen.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="src/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="src/jquery-ui.min.css"/>
+    </head>
+    <body>        
+       <div id="top-panel" class="col-md-12">
+       <h2 id="title">Web Cemitério - São Sebastião da Grama</h2>
+        
+       </div>
+    
+        <div id="side-bar" class="col-md-3">
+            <h3 id="titlepanel">Pesquisa de Túmulos</h3>
+            
+            <hr>
+            <div id ="divtumulo" class="col-xs-12">
+                <div id="divtumulobyid" class="text-center col-xs-12">
+                    <h4>N° do Túmulo</h4>
+                </div>
+                <div id="divtumuloError" class="errorMsg col-xs-12 "></div>
+                <div id="divfindtumuloid" class="form-group">
+                    <div class="col-xs-6">
+                        <input type="text" id="txtfindtumulo" class="form-control" placeholder="Pesquisa">
+                    </div>
+                    <div class="col-xs-6">
+                        <button id="btnfindtumulo" class="btn btn-primary btn-block">Procurar</button>
+                        <br>
+                    </div>
+                    
+                </div>
+               
+                <div class="" id="divtumulosdata"></div>
+                <br>
+                
+            </div>
+            
+            <button id="btnclear" class="btn btn-warning btn-block col-xs-6">Limpar Buscas</button>
+        </div>
+        
+        <div id="mapdiv" class="col-md-12"></div>
+        <script src="mapa.js"></script>
+        <script src="functions.js"></script>
+    </body>
+</html>
