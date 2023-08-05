@@ -35,6 +35,7 @@
 	    <script src="plugins/full/Control.FullScreen.js"></script>
         <link rel="stylesheet" href="style.css">
         <script src="src/jquery-ui.min.js"></script>
+        <link rel="manifest" href="src/manifest.json">
         <link rel="stylesheet" href="src/jquery-ui.min.css"/>
     </head>
     <body>        
@@ -67,6 +68,29 @@
         </div>
         
         <div id="mapdiv" class="col-md-12"></div>
+        <script>
+            if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('service-worker.js')
+                            .then(registration => {
+                                console.log('Service Worker registrado com sucesso:', registration.scope);
+                            })
+                            .catch(error => {
+                                console.error('Falha ao registrar o Service Worker:', error);
+                            });
+                    });
+                }if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registrado com sucesso:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Falha ao registrar o Service Worker:', error);
+                });
+            });
+            }
+        </script>
         <script src="mapa.js"></script>
         <script src="functions.js"></script>
     </body>
