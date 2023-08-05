@@ -1,0 +1,21 @@
+{
+  "name": "Meu PWA",
+  "short_name": "Meu PWA",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "src/mapa1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "src/mapa.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+
